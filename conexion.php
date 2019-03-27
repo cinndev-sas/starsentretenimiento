@@ -1,5 +1,5 @@
 <?php
- 
+/* Prueba */ 
 $mysqli = new mysqli("localhost", "root", "12345", "dbstars");
  
 if($mysqli->connect_errno) {
