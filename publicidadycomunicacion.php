@@ -117,17 +117,17 @@
 <!-- //header -->
 
 <!-- inner page banner -->
-<section class="inner-page-banner-2">
+<section class="inner-page-banner-3">
 	<div class="page-heading text-center">
 		<h2><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gludicasentrada ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gpublicidadentrada ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["titulo"]."<br>";
       }?></h2>
-		<span class="section_1-breadcrumbs"><a href="index.php"><i class="fa fa-home home_1"></i><?php 
+		<span class="section_1-breadcrumbs"><a href="index.html"><i class="fa fa-home home_1"></i><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gludicasentrada ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gpublicidadentrada ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["subtitulo"]."<br>";
       }?></span></span>
@@ -140,24 +140,25 @@
         <div class="heading pb-4">
             <h3 class="heading mb-2 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gludicastitysubtirulo ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gpublicidadtitysubtirulo ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["titulo"]."<br>";
       }?></h3>
             <p class="para mb-5 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gludicastitysubtirulo ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gpublicidadtitysubtirulo ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["subtitulo"]."<br>";
       }?></p>
         </div>
 <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12 text-center"><?php 
+            <div class="col-lg-6 col-sm-12 text-center">
+            	<?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagen ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagen ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow" data-tilt src="'.$res["imagen"].'">'; }?>                
+          echo '<img class="img-fluid img-shadow" data-tilt src="'.$res["imagen"].'">'; }?> 
             </div>
             <div class="col-xl-5 col-lg-6 offset-xl-1 col-sm-12">
                 <div class="space d-none d-xl-block d-sm-block" style="height: 60px"></div>
@@ -170,7 +171,7 @@
                  <h3 class="mt-lg-4"></h3>
                 <p class="my-4"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gpublicidadcaract ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["parrafo"]."<br>";
       }?></p>
@@ -178,46 +179,35 @@
                 <ul>
                     <li class="li-c"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicaa FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT caracteristicaa FROM gpublicidadcaract ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["caracteristicaa"]."<br>";
-      }?></li>
+      }?> </li>
                     <li class="li-c"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicab FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT caracteristicab FROM gpublicidadcaract ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["caracteristicab"]."<br>";
       }?></li>
                     <li><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicac FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT caracteristicac FROM gpublicidadcaract ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["caracteristicac"]."<br>";
       }?></li>
                     <li><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicad FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT caracteristicad FROM gpublicidadcaract ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["caracteristicad"]."<br>";
       }?></li>
                     <li><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicae FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT caracteristicae FROM gpublicidadcaract ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["caracteristicae"]."<br>";
       }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicaf FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicaf"]."<br>";
-      }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicag FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicag"]."<br>";
-      }?></li>
+                    
                    
                 </ul>
                 <div class="space" style="height: 30px"></div>
@@ -233,13 +223,13 @@
 		<div class="heading pb-4">
 			<h3 class="heading mb-2 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gludicascompromiso ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gpublicidadcompromiso ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["titulo"]."<br>";
       }?></h3>
 			<p class="para mb-5 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gludicascompromiso ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gpublicidadcompromiso ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["parrafo"]."<br>";
       }?></p>
@@ -248,7 +238,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/calidaddevidalaboralcolombia.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 0,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 0,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -259,7 +249,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/gestionderiesgocolombiasabanaoccidente.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 1,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 1,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -270,7 +260,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/bienestareneltrabajocolombia.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 2,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 2,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -281,7 +271,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/gestionderiesgosabanoccidente.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 3,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 3,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -292,7 +282,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/ludicasempresarialescolombia.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 4,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 4,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -303,7 +293,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/gestionderiesgocolombialudica.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 5,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 5,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -314,7 +304,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/colombiaimportanciadelagestionderiesgolaboral.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 6,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 6,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -325,7 +315,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/sludocupacionalcolombiacundinamarca.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 7,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 7,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -336,7 +326,7 @@
 				<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/saludeneltrabajocolombia.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 8,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 8,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -347,7 +337,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/colombiariesgosprofesionales.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 9,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 9,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -358,7 +348,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/sistemadegestionderiesgoslaboralescolombia.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 10,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 10,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -369,7 +359,7 @@
 			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
 				<a href="images/ludica/riesgoslaboralescuninamarcacolombia.png" class="swipebox"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 11,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gpublicidadimagenpublicitarias ORDER BY `fecharegistro` DESC LIMIT 11,1");
           while($res=  mysqli_fetch_array($sql)){
           echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
 					<div class="textbox">
@@ -380,11 +370,8 @@
 		</div>
 	</div>	
 </div>	
+<!--//Projects-->	
 <!--//Projects-->
-
-<!-- brands -->
-
-
 <!-- brands -->
 <!-- footer -->
 <footer class="footer py-5">

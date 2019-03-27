@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +23,11 @@
 	<!-- css files -->
 	<link rel="stylesheet" href="css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
     <link href="css/style6.css" rel='stylesheet' type='text/css' />
-     <link rel="shortcut icon" type="image/ico" href="images/logo.png" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
 	<link rel="stylesheet" href="css/fontawesome-all.css"> <!-- Font-Awesome-Icons-CSS -->
 	<link rel="stylesheet" href="css/phpcss.php">
-
 	<!-- //css files -->
 	
-	<!-- Projects swipebox css-->
-	<link rel="stylesheet" href="css/swipebox.css">
-
 	<!--web font-->
 	<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 	<!--//web font-->
@@ -114,278 +110,269 @@
 		</nav>
 	</header>
 </div>
+
 <!-- //header -->
 
 <!-- inner page banner -->
-<section class="inner-page-banner-2">
+<section class="inner-page-banner">
 	<div class="page-heading text-center">
 		<h2><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gludicasentrada ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosentrada ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["titulo"]."<br>";
       }?></h2>
-		<span class="section_1-breadcrumbs"><a href="index.php"><i class="fa fa-home home_1"></i><?php 
+		<p class="para mb-5 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gludicasentrada ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gnosotrosentrada ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["subtitulo"]."<br>";
-      }?></span></span>
+      }?></p>
 	</div>
 </section>
 <!-- //inner page banner -->
 
+<!-- welcome -->
 <section class="Welcome py-5">
-    <div class="container py-sm-3">
-        <div class="heading pb-4">
-            <h3 class="heading mb-2 text-center"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gludicastitysubtirulo ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["titulo"]."<br>";
-      }?></h3>
-            <p class="para mb-5 text-center"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gludicastitysubtirulo ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["subtitulo"]."<br>";
-      }?></p>
-        </div>
-<div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 text-center"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagen ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow" data-tilt src="'.$res["imagen"].'">'; }?>                
-            </div>
-            <div class="col-xl-5 col-lg-6 offset-xl-1 col-sm-12">
-                <div class="space d-none d-xl-block d-sm-block" style="height: 60px"></div>
-                <div class="space d-block d-sm-none" style="height: 60px"></div>
-                <div class="section-title">
-                
-                   
-     
-                </div>
-                 <h3 class="mt-lg-4"></h3>
-                <p class="my-4"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["parrafo"]."<br>";
-      }?></p>
-                
-                <ul>
-                    <li class="li-c"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicaa FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicaa"]."<br>";
-      }?></li>
-                    <li class="li-c"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicab FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicab"]."<br>";
-      }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicac FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicac"]."<br>";
-      }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicad FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicad"]."<br>";
-      }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicae FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicae"]."<br>";
-      }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicaf FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicaf"]."<br>";
-      }?></li>
-                    <li><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT caracteristicag FROM gludicascaract ORDER BY `fecharegistro` DESC LIMIT 1");
-          while($res=  mysqli_fetch_array($sql)){
-                     echo $res["caracteristicag"]."<br>";
-      }?></li>
-                   
-                </ul>
-                <div class="space" style="height: 30px"></div>
-
-              
-            </div>
-        </div>
-    </div>	
-</section>
-<!--start-Projects-->
-<div class="Projects py-5">
-	<div class="container py-sm-4">
+	<div class="container py-sm-3">
 		<div class="heading pb-4">
-			<h3 class="heading mb-2 text-center"><?php 
+                    <h3 class="heading mb-2 text-center"> <span><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gludicascompromiso ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotroscompañia ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["titulo"]."<br>";
       }?></h3>
 			<p class="para mb-5 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gludicascompromiso ORDER BY `fecharegistro` DESC LIMIT 1");
+          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gnosotroscompañia ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["subtitulo"]."<br>";
+      }?></p>
+		</div>
+		<div class="welcome-grids row">
+			<div class="col-lg-6 mb-lg-0 mb-5">
+                            <h3 class="mt-lg-4"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosmision ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["titulo"]."<br>";
+      }?></h3>
+                            <p class="my-4"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosmision ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
                      echo $res["parrafo"]."<br>";
       }?></p>
+					
+			</div>
+			<div class="col-lg-3 col-md-4 col-6 pr-1 welcome-image">
+<?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gnosotrosmisionimagena ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+          echo '<img src="'.$res["imagen"].'">'; }?>			</div>	
+			<div class="col-lg-3 col-md-4 col-6 pl-1 welcome-image">
+<?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gnosotrosmisionimagenb ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+          echo '<img src="'.$res["imagen"].'">'; }?>                                
+			</div>
 		</div>	
-		<div class="row inner_w3l_agile_grids-1">
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/calidaddevidalaboralcolombia.png" class="swipebox"><?php 
+	</div>	
+</section>
+<!-- welcome -->
+
+<!-- what we do -->
+<section class="Welcome py-5">
+	<div class="container py-sm-3">
+		<div class="heading pb-4">
+			<h3 class="heading mb-2 text-center"> <span><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 0,1");
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosvision ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4> SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/gestionderiesgocolombiasabanaoccidente.png" class="swipebox"><?php 
+                     echo $res["titulo"]."<br>";
+      }?></span>  </h3>
+			<p class="para mb-5 text-center"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 1,1");
+          $sql=  mysqli_query($mysqli,"SELECT subtitulo FROM gnosotrosvision ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/bienestareneltrabajocolombia.png" class="swipebox"><?php 
+                     echo $res["subtitulo"]."<br>";
+      }?></p>
+		</div>	
+		<div class="row">
+			<div class="col-lg-6 about-img">
+<?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 2,1");
+          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gnosotrosvisionimagen ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/gestionderiesgosabanoccidente.png" class="swipebox"><?php 
+          echo '<img src="'.$res["imagen"].'">'; }?>			</div>
+			<div class="col-lg-6 about-right mt-lg-0 mt-5">
+				
+				<p class="my-4"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 3,1");
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosvision ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/ludicasempresarialescolombia.png" class="swipebox"><?php 
+                     echo $res["parrafo"]."<br>";
+      }?></p>
+				<!--/about-in-->
+				<div class="row">
+					<div class="col-sm-6 about-in text-left">
+						<div class="card">
+							<div class="card-body">
+								<span><img src="images/iconos/calidad.png" class="img-responsive" alt="" /></span>
+								<h5 class="card-title"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 4,1");
+          $sql=  mysqli_query($mysqli,"SELECT tituloa FROM gnosotrosvisionparrafoayb ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-				</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/gestionderiesgocolombialudica.png" class="swipebox"><?php 
+                     echo $res["tituloa"]."<br>";
+      }?></h5>
+								<p class="card-text"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 5,1");
+          $sql=  mysqli_query($mysqli,"SELECT parrafoa FROM gnosotrosvisionparrafoayb ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
+                     echo $res["parrafoa"]."<br>";
+      }?></p>
+							</div>
+						</div>
+
 					</div>
-			   </a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/colombiaimportanciadelagestionderiesgolaboral.png" class="swipebox"><?php 
+					<div class="col-sm-6 about-in text-left">
+						<div class="card">
+							<div class="card-body">
+								<span><img src="images/iconos/comprosmiso.png" class="img-responsive" alt="" /></span>
+								<h5 class="card-title"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 6,1");
+          $sql=  mysqli_query($mysqli,"SELECT titulob FROM gnosotrosvisionparrafoayb ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			   </a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/sludocupacionalcolombiacundinamarca.png" class="swipebox"><?php 
+                     echo $res["titulob"]."<br>";
+      }?></h5>
+								<p class="card-text"><?php 
             require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 7,1");
+          $sql=  mysqli_query($mysqli,"SELECT parrafob FROM gnosotrosvisionparrafoayb ORDER BY `fecharegistro` DESC LIMIT 1");
           while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
+                     echo $res["parrafob"]."<br>";
+      }?>
+								</p>
+							</div>
+						</div>
+
 					</div>
-			   </a>
-			</div>
-				<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/saludeneltrabajocolombia.png" class="swipebox"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 8,1");
-          while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/colombiariesgosprofesionales.png" class="swipebox"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 9,1");
-          while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/sistemadegestionderiesgoslaboralescolombia.png" class="swipebox"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 10,1");
-          while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 Projects-grid Projects1">
-				<a href="images/ludica/riesgoslaboralescuninamarcacolombia.png" class="swipebox"><?php 
-            require_once 'conexion.php';
-          $sql=  mysqli_query($mysqli,"SELECT imagen FROM gludicasimagenludicas ORDER BY `fecharegistro` DESC LIMIT 11,1");
-          while($res=  mysqli_fetch_array($sql)){
-          echo '<img class="img-fluid img-shadow img-responsive" data-tilt src="'.$res["imagen"].'">'; }?>
-					<div class="textbox">
-					<h4>SGSST StartEntretenimiento</h4>
-					</div>
-			</a>
+				</div>
+				<!--/about-in-->
 			</div>
 		</div>
 	</div>	
-</div>	
-<!--//Projects-->
+</section>
+<!-- what we do -->
 
-<!-- brands -->
+<!-- /Features -->
+<section class="banner-bottom py-lg-5 py-md-5 py-3" id="Features">
+	<div class="container">
+		<div class="inner-sec py-lg-5 py-3">
+			<div class="heading pb-4">
+				<h3 class="heading mb-2 text-center"> <span><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosservicios ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["titulo"]."<br>";
+      }?></h3>
+				<p class="para mb-5 text-center"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosservicios ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["parrafo"]."<br>";
+      }?></p>
+			</div>	
+			<div class="row middle-grids">
+				<div class="col-lg-3 col-sm-6 about-in middle-grid-info text-center">
+					<div class="card">
+						<div class="card-body">
+							<i><span><img src="images/iconos/comprosmiso.png" class="img-responsive" alt="" /></span></i>
+							<h5 class="card-title text-uppercase my-3"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosservicioa ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["titulo"]."<br>";
+      }?></h5>
+							<p class="card-text"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosservicioa ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["parrafo"]."<br>";
+      }?>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mt-md-0 mt-3 about-in middle-grid-info text-center">
+					<div class="card">
+						<div class="card-body">
+							<i><span><img src="images/iconos/calidad.png" class="img-responsive" alt ="" /></span></i>
+							<h5 class="card-title text-uppercase my-3"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosserviciob ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["titulo"]."<br>";
+      }?></h5>
+							<p class="card-text"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosserviciob ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["parrafo"]."<br>";
+      }?></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 mt-lg-0 mt-3 about-in middle-grid-info text-center">
+					<div class="card">
+						<div class="card-body">
+							<i><span><img src="images/iconos/equipo.png" class="img-responsive" alt="" /></span></i>
+							<h5 class="card-title text-uppercase my-3"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosservicioc ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["titulo"]."<br>";
+      }?></h5>
+							<p class="card-text"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosservicioc ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["parrafo"]."<br>";
+      }?>
+							</p>
+						</div>
+					</div>
+				</div>
+				 <div class="col-lg-3 col-sm-6 mt-lg-0 mt-3 about-in middle-grid-info active text-center">
+					<div class="card">
+						<div class="card-body">
+							<i><span><img src="images/iconos/tecnologia.png" class="img-responsive" alt="" /></span></i>
+							<h5 class="card-title text-uppercase my-3"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT titulo FROM gnosotrosserviciod ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["titulo"]."<br>";
+      }?></h5>
+							<p class="card-text"><?php 
+            require_once 'conexion.php';
+          $sql=  mysqli_query($mysqli,"SELECT parrafo FROM gnosotrosserviciod ORDER BY `fecharegistro` DESC LIMIT 1");
+          while($res=  mysqli_fetch_array($sql)){
+                     echo $res["parrafo"]."<br>";
+      }?>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //Features -->
+	
 
 
-<!-- brands -->
+<!-- footer -->
 <!-- footer -->
 <footer class="footer py-5">
 	<div class="container py-sm-4">
@@ -405,7 +392,7 @@
 				<ul class="list-agileits">
 					<li>
 						<a href="index.php">
-							Inicio 
+							Inicio
 						</a>
 					</li>
 					<li class="my-2">
@@ -507,9 +494,6 @@
 		<a href="http://cinndev.online"> Cinndev</a>
 	</p>
 </div>
-<!-- //copyright -->
-
-<!-- //copyright -->
 
  <!--model-forms-->
     <!--/Login-->
@@ -625,21 +609,12 @@
         });
     </script>
     <!-- //dropdown nav -->
-	
-	<!-- Projects swipebox -->
-	<script src="js/jquery.swipebox.min.js"></script> 
-	<script>
-		jQuery(function($) {
-			$(".swipebox").swipebox();
-		});
-	</script>
-	<!-- //Projects swipebox-->
+
 
 	<!-- start-smoth-scrolling -->
 	<script src="js/SmoothScroll.min.js"></script>
 	<script src="js/move-top.js"></script>
 	<script src="js/easing.js"></script>
-        <script src="js/ludica.js"></script>
 	<script>
 		jQuery(document).ready(function($) {
 			$(".scroll").click(function(event){		
