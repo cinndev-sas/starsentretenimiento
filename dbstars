@@ -1,0 +1,442 @@
+create database dbstars;
+use dbstars;
+create table giniciofotounoslider(
+id int	auto_increment not null primary key,
+encabezado varchar(200),
+parrafo varchar(500),
+imagen varchar(100) NOT NULL,
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciofotodoslider(
+id int	auto_increment not null primary key,
+encabezado varchar(200),
+parrafo varchar(500),
+imagen varchar(100) NOT NULL,
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciofototreslider(
+id int	auto_increment not null primary key,
+encabezado varchar(200),
+parrafo varchar(500),
+imagen varchar(100) NOT NULL,
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciotextonosotros(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1500),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ginicioimagennosotros(
+id int	auto_increment not null primary key,
+imagen varchar(100) NOT NULL,
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ginicioimagennosotrosb(
+id int	auto_increment not null primary key,
+imagen varchar(100) NOT NULL,
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciodatosestadisticos(
+id int	auto_increment not null primary key,
+datoa int(5) NOT NULL,
+datob int(5) NOT NULL,
+datoc int(5) NOT NULL,
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciotextoestadisticas(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table giniciocaracteristicaa(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciocaracteristicab(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table giniciocaracteristicac(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciocaracteristicad(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciocaracteristicae(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table giniciocaracteristicaf(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table ginicioclientesa(
+id int	auto_increment not null primary key,
+imagen varchar(150),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ginicioclientesb(
+id int	auto_increment not null primary key,
+imagen varchar(150),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ginicioclientesc(
+id int	auto_increment not null primary key,
+imagen varchar(150),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ginicioclientesd(
+id int	auto_increment not null primary key,
+imagen varchar(150),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ginicioclientese(
+id int	auto_increment not null primary key,
+imagen varchar(150),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table ginicioclientesf(
+id int	auto_increment not null primary key,
+imagen varchar(150),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gfootercorreo(
+id int	auto_increment not null primary key,
+correo varchar(110),
+correob varchar(110),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gfootertelefono(
+id int	auto_increment not null primary key,
+telefono varchar(20),
+telefonob varchar(20),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gfooterdireccion(
+id int	auto_increment not null primary key,
+direccion varchar(500),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gfooterdireccionmaps(
+id int	auto_increment not null primary key,
+direccionmaps varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gfooteranio(
+id int	auto_increment not null primary key,
+anio varchar(5),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosentrada(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotroscompañia(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosmision(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosmisionimagena(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosmisionimagenb(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gnosotrosvision(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+subtitulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosvisionparrafoayb(
+id int	auto_increment not null primary key,
+tituloa varchar(100),
+parrafoa varchar(800),
+titulob varchar(100),
+parrafob varchar(800),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gnosotrosvisionimagen(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gnosotrosservicios(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosservicioa(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);create table gnosotrosserviciob(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gnosotrosservicioc(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);create table gnosotrosserviciod(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gvideosentrada(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gvideosentradatituloysub(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gvideoscaracteristicas(
+id int	auto_increment not null primary key,
+parrafo varchar(1200),
+caracteristicaa varchar(600),
+caracteristicab varchar(600),
+caracteristicac varchar(600),
+caracteristicad varchar(600),
+caracteristicae varchar(600),
+caracteristicaf varchar(600),
+caracteristicag varchar(600),
+caracteristicah varchar(600),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gvideosvideoyoutube(
+id int	auto_increment not null primary key,
+url varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gvideosttitulovideos(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table ggaleriavideos(
+id int	auto_increment not null primary key,
+url varchar(800),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+
+
+
+
+
+
+
+create table gludicasentrada(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gludicastitysubtirulo(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gludicasimagen(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+create table gludicascaract(
+id int	auto_increment not null primary key,
+parrafo varchar(1200),
+caracteristicaa varchar(600),
+caracteristicab varchar(600),
+caracteristicac varchar(600),
+caracteristicad varchar(600),
+caracteristicae varchar(600),
+caracteristicaf varchar(600),
+caracteristicag varchar(600),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+create table gludicascompromiso(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gludicasimagenludicas(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+create table gpublicidadentrada(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gpublicidadtitysubtirulo(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+subtitulo varchar(200),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gpublicidadimagen(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gpublicidadcaract(
+id int	auto_increment not null primary key,
+parrafo varchar(1200),
+caracteristicaa varchar(600),
+caracteristicab varchar(600),
+caracteristicac varchar(600),
+caracteristicad varchar(600),
+caracteristicae varchar(600),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+create table gpublicidadcompromiso(
+id int	auto_increment not null primary key,
+titulo varchar(200),
+parrafo varchar(1000),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+create table gpublicidadimagenpublicitarias(
+id int	auto_increment not null primary key,
+imagen varchar(300),
+fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

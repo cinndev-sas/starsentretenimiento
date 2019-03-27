@@ -1,0 +1,13 @@
+.as{
+  height: 200;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: gray;
+  text-align: center;
+}
+.texa{
+  max-width: 50%;
+}
+.container-fluid{
+	text-align: center;
+}

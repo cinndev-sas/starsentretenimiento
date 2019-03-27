@@ -1,0 +1,15 @@
+.container-fluid{
+	text-align: center;
+}
+.col-md-12{
+	margin-bottom: 20px;
+}
+.as{
+  border-width: 2px;
+  border-style: dashed;
+  border-color: gray;
+  text-align: center;
+}
+.texa{
+  max-width: 50%;
+}

@@ -1,0 +1,9 @@
+.as{
+  border-width: 2px;
+  border-style: dashed;
+  border-color: gray;
+  text-align: center;
+}
+.texa{
+  max-width: 50%;
+}
