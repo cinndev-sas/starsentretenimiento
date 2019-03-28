@@ -1,5 +1,11 @@
 create database dbstars;
 use dbstars;
+create table admin_user(
+id int(11)auto_increment primary key,
+usuario varchar(100) not null,
+clave varchar(100) not null
+);
+insert into admin_user(usuario,clave)values('Fernando','Cinndev');
 create table giniciofotounoslider(
 id int	auto_increment not null primary key,
 encabezado varchar(200),
@@ -31,6 +37,7 @@ parrafo varchar(1500),
 fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+select *from ginicioimagennosotrosb
 create table ginicioimagennosotros(
 id int	auto_increment not null primary key,
 imagen varchar(100) NOT NULL,
@@ -109,6 +116,8 @@ imagen varchar(150),
 fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+select * from ginicioclientesa;
+
 create table ginicioclientesb(
 id int	auto_increment not null primary key,
 imagen varchar(150),
@@ -166,7 +175,6 @@ direccionmaps varchar(1200),
 fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
-
 create table gfooteranio(
 id int	auto_increment not null primary key,
 anio varchar(5),
@@ -301,6 +309,7 @@ url varchar(300),
 fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
 create table gvideosttitulovideos(
 id int	auto_increment not null primary key,
 titulo varchar(200),
@@ -314,7 +323,6 @@ url varchar(800),
 fecharegistro timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
 fechacambio timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
-
 
 
 

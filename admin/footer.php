@@ -1,3 +1,8 @@
+<?php 
+session_start();
+require_once 'conexion.php';
+
+if (isset($_SESSION['usuario'])) {?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -248,3 +253,8 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php
+}else{
+  echo '<script> window.location="indexadmin.php"; </script>';
+}
+?>

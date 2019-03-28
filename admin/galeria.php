@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php 
+session_start();
+require_once 'conexion.php';
+
+if (isset($_SESSION['usuario'])) {?>
+  <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -358,3 +363,8 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php
+}else{
+  echo '<script> window.location="indexadmin.php"; </script>';
+}
+?>

@@ -1,3 +1,8 @@
+<?php 
+session_start();
+require_once 'conexion.php';
+
+if (isset($_SESSION['usuario'])) {?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,7 +28,9 @@
 		</div>
 		<div class="col-md-10">
             <h1>Tablero de diseño</h1>
-
+            <div class="col-md-12 btnsalir">
+<a class="btn btn-primary" href="salir.php" role="button">cerrar sesion</a>
+            </div>
                 <iframe src="inicio.php" class="cuadro" name="iframe_a"></iframe>
 		</div>
 	</div>
@@ -31,3 +38,8 @@
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php
+}else{
+  echo '<script> window.location="indexadmin.php"; </script>';
+}
+?>
